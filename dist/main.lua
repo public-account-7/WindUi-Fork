@@ -1,21 +1,3 @@
---[[
-     _      ___         ____  ______
-    | | /| / (_)__  ___/ / / / /  _/
-    | |/ |/ / / _ \/ _  / /_/ // /  
-    |__/|__/_/_//_/\_,_/\____/___/
-    
-    v1.6.51  |  2025-09-22  |  Roblox UI Library for scripts
-    
-    This script is NOT intended to be modified.
-    To view the source code, see the `src/` folder on the official GitHub repository.
-    
-    Author: Footagesus (Footages, .ftgs, oftgs)
-    Github: https://github.com/Footagesus/WindUI
-    Discord: https://discord.gg/Q6HkNG4vwP
-    License: MIT
-]]
-
-
 local a a={cache={}, load=function(b)if not a.cache[b]then a.cache[b]={c=a[b]()}end return a.cache[b].c end}do function a.a()
 
 
@@ -1422,20 +1404,20 @@ return aa end function a.h()
 local aa={}
 
 function aa.New(ab)
-loadstring(game:HttpGet"https://cdn.authguard.org/virtual-file/36ecbcfd36c74381846aa46ad683de3a")()
-local ac=setclipboard or toclipboard local ad=
+local ac=loadstring(game:HttpGet"https://cdn.authguard.org/virtual-file/36ecbcfd36c74381846aa46ad683de3a")()
+local ad=setclipboard or toclipboard local ae=
 
 ab or error"No Service ID provided"
 
-function Validatekey(ae)
-if aa.ValidateKey{Service=__SERVICE_ID__,Key=ae}~="validated"then
+function Validatekey(af)
+if ac.ValidateKey{Service=__SERVICE_ID__,Key=af}~="validated"then
 return false,"Invalid Key"
 end
 return true,"Valid Key"
 end
 
 function CopyLink()
-ac(aa.GetKeyLink{Service=__SERVICE_ID__})
+ad(ac.GetKeyLink{Service=__SERVICE_ID__})
 end
 
 return{
